@@ -25,9 +25,7 @@ function Button(props: ButtonProps) {
                     <Link href={link} target='_blank' passHref>
                         <div
                             className={`inline-flex items-center py-2 px-4 rounded-full ${buttonStyles} relative z-10`}
-                            style={{
-                                border: darkMode ? 'none' : '2px solid black',
-                            }}
+                            style={{ border: darkMode ? '1px solid white' : '1px solid black' }}
                         >
                             {title && title}
                             {Icon && <Icon className={`${title ? 'ml-2' : ''}`} />}
@@ -37,7 +35,10 @@ function Button(props: ButtonProps) {
                 </div>
             ) : (
                 <div className={`mt-4 inline-block relative ${className}`}>
-                    <div className={`py-2 px-4 rounded-full ${buttonStyles} relative z-10`} style={{ border: darkMode ? 'none' : '2px solid black' }}>
+                    <div
+                        className={`inline-flex items-center py-2 px-4 rounded-full ${buttonStyles} relative z-10`}
+                        style={{ border: darkMode ? '1px solid white' : '1px solid black' }}
+                    >
                         <button className="relative z-10">{title}</button>
                         {Icon && <Icon className={`${title ? 'ml-2' : ''}`} />}
                     </div>
