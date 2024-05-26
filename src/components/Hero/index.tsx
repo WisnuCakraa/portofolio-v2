@@ -18,7 +18,7 @@ const Hero = () => {
                     <Image src={darkMode ? "/images/face-off.png" : "/images/face-on.png"} alt="Profile Image" width={300} height={300} />
                 </div>
                 <div className="p-8 text-right">
-                    <h1 className="text-7xl mb-2"><span className='text-purple-500 mr-4'>I'M</span>Wisnu Cakra Basudewa Prasodjo</h1>
+                    <h1 className="text-7xl mb-2"><span className='text-purple-500 mr-4'>I&apos;M</span>Wisnu Cakra Basudewa Prasodjo</h1>
                     <p className="text-xl pl-3">{loremIpsum}</p>
                     <div className='flex justify-end items-center'>
                         <Button className='mr-2' title="RESUME" link='https://drive.google.com/file/d/1BmftZkOVZypwyF0x6EDh5pTnftUAWhd-/view?usp=sharing' Icon={LuDownloadCloud} />
