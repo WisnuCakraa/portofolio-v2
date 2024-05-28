@@ -19,14 +19,7 @@ const Navbar = () => {
                 <li><Link className="tracking-wider" href="/contact">Contact Me</Link></li>
             </ul>
             <div className="absolute top-[14.3rem] transform -translate-y-1/2 left-48">
-                <button onClick={toggleDarkMode}>
-                    <Image src={darkMode ? "/icons/lights-on.svg" : "/icons/lights-off.svg"} alt="Toggle Dark Mode" width={300} height={300} />
-                </button>
-            </div>
-            <div className="absolute top-[14.3rem] transform -translate-y-1/2 right-48">
-                <button onClick={toggleDarkMode}>
-                    <Image src={darkMode ? "/icons/lights-on.svg" : "/icons/lights-off.svg"} alt="Toggle Dark Mode" width={300} height={300} />
-                </button>
+                <Image onClick={toggleDarkMode} src={darkMode ? "/icons/lights-on.svg" : "/icons/lights-off.svg"} alt="Toggle Dark Mode" width={300} height={300} />
             </div>
             <div className="absolute bottom-0 left-0 w-full h-3 bg-gradient-to-b from-purple-500 to-transparent opacity-50"></div>
         </nav>
